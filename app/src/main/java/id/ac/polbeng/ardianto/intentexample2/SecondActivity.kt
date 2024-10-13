@@ -11,8 +11,7 @@ class SecondActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySecondBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        val receiveData = intent.getStringExtra ("main_activity_data")
+        val receiveData = intent.getStringExtra("main_activity_data")
         binding.textView.text = receiveData
-        }
     }
+}
